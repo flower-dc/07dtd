@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "target": "ESNext",
+    "lib": ["DOM", "ESNext"],
+    "jsx": "preserve",
+    "esModuleInterop": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "rootDir": "./",
+    "typeRoots": [
+      "./node_modules/@types",
+      "./packages/*/node_modules/@types",
+      "./packages/*/types"
+    ],
+    "paths": {
+      "~/*": ["packages/*"]
+    }
+  },
+  "include": ["packages/**/*"],
+  "exclude": ["node_modules", "packages/**/node_modules"]
+}

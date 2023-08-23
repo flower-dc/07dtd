@@ -1,0 +1,13 @@
+{
+  "name": "@07dtd/blog",
+  "version": "1.0.0",
+  "author": "flower607",
+  "license": "MIT",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@07dtd/components": "workspace:^"
+  }
+}

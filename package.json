@@ -1,0 +1,31 @@
+{
+  "name": "07dtd",
+  "version": "1.0.0",
+  "author": "flower607",
+  "license": "MIT",
+  "exports": {
+    ".": "./packages/index.ts",
+    "./components": "./packages/components/index.ts"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "postinstall": "simple-git-hooks"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.40.2",
+    "eslint": "^8.47.0",
+    "lint-staged": "^14.0.1",
+    "simple-git-hooks": "^2.9.0",
+    "typescript": "^5.1.6"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,json,vue}": [
+      "eslint --fix"
+    ]
+  }
+}

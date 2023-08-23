@@ -1,0 +1,10 @@
+{
+  "name": "@07dtd/components",
+  "version": "1.0.0",
+  "author": "flower607",
+  "license": "MIT",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
